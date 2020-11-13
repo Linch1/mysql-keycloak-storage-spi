@@ -9,17 +9,17 @@
 ### Prepare
 - `$ KEYCLOAK_HOME=/home/tom/dev/playground/keycloak/keycloak-3.3.0.CR1 { <-- replace the path with your keycloak path }`
 
-## Prepare Keycloak
+#### Prepare Keycloak
 Run [setup.cli](./setup.cli) with
 This configures the custom logger and registers the static configuration 
 of the user federation provider. 
 - `$ echo "yes" | $KEYCLOAK_HOME/bin/jboss-cli.sh --file=$KEYCLOAK_HOME/setup.cli`
 
-## Start Keycloak
+### Start Keycloak
 - `$ cd $KEYCLOAK_HOME`
 - `$ bin/standalone.sh -c standalone-ha.xml`
 
-## Deployment ( Build and Deploy the .ear )
+### Deployment ( Build and Deploy the .ear )
 Build and Deploy `.ear` package to wildfly.
 This copies the `.ear` file to `standalone/deployments` folder.
 - `$ mvn clean install wildfly:deploy -Djboss-as.home=$KEYCLOAK_HOME`
