@@ -1,9 +1,10 @@
 # A custom Keycloak User Storage Provider
 
-This example demonstrates how to deploy custom Keycloak User storage provider as an `.ear`.  Deploying it as `.ear` allows to use custom dependencies that are not part of the keycloak module space.  
-The custom storage provider is implemented in the `jar-module` derectory.
-This custom storage uses mysql as database, in the `mysql-keycloak-storage-spi/jar-module/src/main/resources/hibernate.cfg.xml` file you must update the mysql access credentials.
-This example is based on [keycloak-user-spi-demo](https://github.com/dasniko/keycloak-user-spi-demo) by [@dasniko](https://github.com/dasniko).
+- This example demonstrates how to deploy custom Keycloak User storage provider as an `.ear`.  Deploying it as `.ear` **allows** to use **custom dependencies** that are **not part of the keycloak module space**.  
+- The custom storage provider is implemented in the `jar-module` derectory.
+- This custom storage uses **mysql** as **database**, in the `mysql-keycloak-storage-spi/jar-module/src/main/resources/hibernate.cfg.xml` file **you must update** the mysql **access credentials**.
+
+>This example is based on [keycloak-user-spi-demo](https://github.com/dasniko/keycloak-user-spi-demo) by [@dasniko](https://github.com/dasniko).
 
 ### Prepare
 - `$ KEYCLOAK_HOME=/home/tom/dev/playground/keycloak/keycloak-3.3.0.CR1 { <-- replace the path with your keycloak path }`
