@@ -9,7 +9,7 @@
 ### Prepare
 - `$ KEYCLOAK_HOME=/home/tom/dev/playground/keycloak/keycloak-3.3.0.CR1 { <-- replace the path with your keycloak path }`
 
-#### Prepare Keycloak
+### Prepare Keycloak
 Run [setup.cli](./setup.cli) with
 This configures the custom logger and registers the static configuration 
 of the user federation provider. 
